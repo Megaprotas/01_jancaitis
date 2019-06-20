@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Aleo');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.homepage {
+    height: 100vh;
+
+    background: url('../images/toppage.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: block;
+    position: relative;
+}
+
+/* Jumbotron elements */
+.jumbotron {
+    background-color: transparent;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 170px;                  /* or use item-align: center; */
+}
+
+.front-button {
+    margin-top: 25px;
+    font-family: Montserrat;
+    border-radius: 15%;
+}
+
+/* Navbar large config */
+.navbar {
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    border: 0;
+    background-color: transparent;
+}
+
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:focus,
+.navbar .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background: transparent;
+}
+
+.navbar .navbar-nav>li>a:focus,
+.navbar .navbar-nav>li>a:hover {
+    color: #ffffff;
+    background-color: #202020;
+    font-size: 16px;
+    transition-duration: .3s;
+}
+
+/* Navbar small config */
+.nav-button {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 15px;
+    border: 1px;
+}
+
+.nav-button:active {
+    background-color: #202020;  
+}
+
+.nav-dropdown {
+    background-color: #000000;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.75em;
+}
+
+.nav-dropdown li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* Fonts */
+.navbar .navbar-nav li a {
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Aleo, sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: Montserrat, sans-serif;
+    line-height: 1.25em; /* just for jumbotron */
+}
+
+/* common page styling */
+.section-title {
+    margin-top: 20px;
+}
+
+.page-content {
+    line-height: 1.5em;
+    text-align: justify;
+    margin: 20px 0 20px 0;
+}
+
+.nav-arrow {
+    text-align: center;
+}
+
+.nav-arrow a {
+    color: #000000;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+/* Footer config */
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    text-align: center;
+    border: 0;
+}
+
+.footer-par {
+    margin-top: 15px;
+}
+
+.footer-par a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer-par>a:hover {
+    background-color: #202020;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px;
+    transition-duration: .3s;
+}
+
+.footer-center {
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.footer .fa {
+    font-size: 30px;
+    padding: 0 20px 0 20px;
+    margin-top: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50%
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    color: #ffffff
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Sections our-history*/
+#our-history {
+    height: auto;
+}
+
+.band-members img {
+    background-origin: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 25px auto 25px auto;
+}
+
+/* Sections audio-video*/
+#audio-video {
+    height: auto;
+    background-color: #D3D3D3;
+}
+
+.album-cover {
+    height: 300px;
+    width: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.dropdown-menu li {
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+}
+
+figcaption {
+    line-height: 1.4em;
+}
+
+audio {
+    height: 25px;
+}
+
+.video {
+    text-align: center;
+    overflow: hidden;
+}
+
+video {
+    max-height: auto;
+    max-width: 640px;
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 25px;
+    }
+
+    video {
+        height: auto;
+        width: 280px;
+    }
+
+}
+
+/* Sections Services */
+.page-content::before {
+    content: "";
+}
+
+.img-thumbnail {
+    max-height: auto;
+    max-width: 200px;
+}
+
+.extra-class-for-span a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.our-service-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service-icon {
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    line-height: 1.1em;
+}
